@@ -2,7 +2,6 @@
  <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <!-- 数据库驱动包位置 -->
-    <classPathEntry location="src/main/resources/mybatis-generator/mysql-connector-java-5.1.37.jar" />
     <context id="MysqlTables" targetRuntime="MyBatis3">
         <commentGenerator>
             <property name="suppressAllComments" value="false" />
@@ -10,10 +9,10 @@
         </commentGenerator>
         
         <!-- 数据库链接URL、用户名、密码 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" 
-                        connectionURL="jdbc:mysql://localhost:3306/demo27_test"
-                        userId="xxx" 
-                        password="xx">
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/mybaits_test"
+                        userId="mb"
+                        password="mb++2019">
         </jdbcConnection>
         
         <javaTypeResolver>
@@ -38,8 +37,8 @@
         </javaClientGenerator>
         
 <!--         要生成那些表(更改tableName和domainObjectName就可以) -->
-        <table tableName="clb_apply_type" domainObjectName="applyType" 
-               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" 
-               enableSelectByExample="false" selectByExampleQueryId="false"/>
+        <!--<table tableName="clb_apply_type" domainObjectName="applyType" -->
+               <!--enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" -->
+               <!--enableSelectByExample="false" selectByExampleQueryId="false"/>-->
     </context>
 </generatorConfiguration>
