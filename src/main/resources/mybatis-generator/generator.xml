@@ -2,9 +2,9 @@
  <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <!-- 数据库驱动包位置 -->
-    <context id="MysqlTables" targetRuntime="MyBatis3">
+    <context id="MysqlTables" targetRuntime="MyBatis3Simple">
         <commentGenerator>
-            <property name="suppressAllComments" value="false" />
+            <property name="suppressAllComments" value="true" />
             <property name="suppressDate" value="false" />
         </commentGenerator>
         
