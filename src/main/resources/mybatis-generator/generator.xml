@@ -35,10 +35,7 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.doctor.mybatisdemo.dao" targetProject="src/main/java/">
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
-        
-<!--         要生成那些表(更改tableName和domainObjectName就可以) -->
-        <!--<table tableName="clb_apply_type" domainObjectName="applyType" -->
-               <!--enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" -->
-               <!--enableSelectByExample="false" selectByExampleQueryId="false"/>-->
+
+        <table tableName="user" domainObjectName="user"/>
     </context>
 </generatorConfiguration>
